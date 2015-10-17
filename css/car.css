@@ -1,0 +1,10 @@
+#car{
+	height: 20px;
+	width: 40px;
+	background-color: blue;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	transform: rotate(90deg);
+	border-right: solid firebrick 10px;
+}

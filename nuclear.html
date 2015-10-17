@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Nuclear control system</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Nuclear control system<br />
+						<small>a dangerous toy</small>
+					</h1>
+					<ul class="nav nav-pills">
+						<li class="active"><a href="#">Launch a missile</a></li>
+						<li class="disabled"><a href="#">Defense system</a></li>
+						<li><a href="./index.html">Self Destruction</a></li>
+					</ul>
+					<hr />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-xs-4">
+					<img src="img/missile.jpg" class="img-responsive" style="width: 100%;"/>
+				</div>
+				<div class="col-md-10 col-xs-8">
+					<form action="php/test.php" method="get">
+						<div class="form-group">
+							<label>Longitude</label>
+							<input name="lnt" type="number" class="form-control" placeholder="Enter a Longitude"/>
+						</div>
+						<div class="form-group">
+							<label>Latitude</label>
+							<input name="lat" type="number" class="form-control" placeholder="Enter a Latitude"/>
+						</div>
+						<div class="form-group">
+							<label>Missile</label>
+							<select name="missile" class="form-control">
+								<option value="Tiny">Tiny</option>
+								<option value="Small">Small</option>
+								<option value="Big">Big</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-default btn-lg col-xs-6" type="button">Cancel</button>
+							<button class="btn btn-danger btn-lg col-xs-6">Accept&nbsp;<span class="glyphicon glyphicon-check"></span></button>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
